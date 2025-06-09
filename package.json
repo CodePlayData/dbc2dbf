@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "The @danicat dbc2dbf C++ function port to NodeJS.",
   "main": "./src/index.js",
-  "require": "./src/index.js",
   "types": "./src/index.d.ts",
   "type": "module",
   "files": [
@@ -31,5 +30,10 @@
   },
   "dependencies": {
     "node-addon-api": "^8.3.1"
+  },
+  "binary": {
+    "module_name": "addon",
+    "module_path": "build/Release/",
+    "package_name": "{module_name}-v{version}-node-v{napi_build_version}-{platform}-{arch}.tar.gz"
   }
 }
