@@ -1,11 +1,13 @@
 {
-  "name": "dbc2dbf",
-  "version": "1.0.0",
+  "name": "@codeplaydata/dbc2dbf",
+  "version": "1.0.1",
   "description": "The @danicat dbc2dbf C++ function port to NodeJS.",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
   "type": "module",
   "files": [
+    "prebuilds/",
+    "binding.gyp",
     "src/",
     "build/Release/addon.node"
   ],
