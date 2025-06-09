@@ -1,0 +1,35 @@
+{
+  "name": "dbc2dbf",
+  "version": "1.0.0",
+  "description": "The @danicat dbc2dbf C++ function port to NodeJS.",
+  "main": "./src/index.js",
+  "require": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "type": "module",
+  "files": [
+    "src/",
+    "build/Release/addon.node"
+  ],
+  "scripts": {
+    "publish": "npm publish --access=public",
+    "install": "prebuild-install || node-gyp rebuild",
+    "prebuild": "prebuild --backend node-gyp --napi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodePlayData/dbc2dbf.git"
+  },
+  "author": "Pedro Paulo dos Santos (dr2p) - https://github.com/dr2pedro",
+  "license": "AGPLv3",
+  "bugs": {
+    "url": "https://github.com/CodePlayData/dbc2dbf/issues"
+  },
+  "homepage": "https://github.com/CodePlayData/dbc2dbf#readme",
+  "devDependencies": {
+    "prebuild": "^13.0.1",
+    "prebuild-install": "^7.1.3"
+  },
+  "dependencies": {
+    "node-addon-api": "^8.3.1"
+  }
+}
